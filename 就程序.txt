@@ -1,0 +1,4 @@
+ad_data <- read.csv('五粮液1.csv',header = T,stringsAsFactors = F)
+fit <- lm(Clpr~.,data=ad_data[,c("Baidu","Clpr","Dret")])
+fit
+summary(fit)
